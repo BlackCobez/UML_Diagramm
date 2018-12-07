@@ -1,6 +1,6 @@
 package uebung3_UML_Projekt;
 
-public class Class_klassen {
+public class Klassen {
 	private String bezeichnung;
 	private int schulstufe;
 	
