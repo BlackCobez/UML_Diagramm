@@ -11,5 +11,4 @@ public class Abteilung {
 	public boolean addLehrer(Lehrer1);
 	public boolean setAbteilungsvorstand();
 	
-	;
 }
