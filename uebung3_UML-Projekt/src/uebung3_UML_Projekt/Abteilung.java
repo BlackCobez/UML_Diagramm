@@ -15,19 +15,12 @@ public class Abteilung {
 	public getSchueler() {			//ArrayList<Schueler>
 		return schueler;
 	} 			
-	public boolean addLehrer(Lehrer l) {
+	public boolean addLehrer() {
 		
 	}
 	public boolean setAbteilungsvorstand() {
 		
 	}
 
-
-	public String getName();
-	public String getKuerzel();
-	public getSchueler(); //ArrayList<Schueler>
-	public boolean addLehrer(Lehrer1);
-	public boolean setAbteilungsvorstand();
-	
 
 }
