@@ -6,7 +6,7 @@ public class Schule {
 	private String schultyp;
 	private long schulkennzahl;
 	
-	public boolean addPersonal(NichtLehrpersonal personal) {		
+	public boolean addPersonal(Nichtlehrpersonal personal) {		
 	}
 	public Abteilung addAbteilung(String name, String kuerzel) {
 		
