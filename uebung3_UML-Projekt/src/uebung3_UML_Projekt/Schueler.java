@@ -3,12 +3,12 @@ package uebung3_UML_Projekt;
 import java.util.Date;
 
 public class Schueler extends Person{
-	private int karalognummer;
+	private int katalognummer;
 	private boolean eigenberechtigt;
 	private Date eintrittsdatum;
 	
-	public int getKaralognummer() {
-		return karalognummer;
+	public int getKatalognummer() {
+		return katalognummer;
 	}
 	public boolean isEigenberechtigt() {
 	}
