@@ -1,11 +1,16 @@
 package uebung3_UML_Projekt;
 
 public class Schule {
-
+	//Beziehung
+	
+	//Variablen
 	private String name;
 	private String schultyp;
 	private long schulkennzahl;
 	
+	//Konstruktor
+	
+	//Methoden, getter und setter
 	public boolean addPersonal(Nichtlehrpersonal personal) {		
 	}
 	public Abteilung addAbteilung(String name, String kuerzel) {
