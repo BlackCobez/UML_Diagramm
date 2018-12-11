@@ -6,11 +6,10 @@ public class Belegung {
 	public Unterrichtstag getWochentag() {
 		
 	}
-	public Klasse getKlasse() {
-		return Klasse;
+	public Klassen getKlasse() {
+		return klassen;
 	}
 	public Lehrer getLehrer() {
-		return Lehrer;
+		return lehrer;
 	}
-
 }

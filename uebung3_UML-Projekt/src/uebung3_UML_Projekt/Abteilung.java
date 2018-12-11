@@ -15,12 +15,11 @@ public class Abteilung {
 	public getSchueler() {			//ArrayList<Schueler>
 		return schueler;
 	} 			
-	public boolean addLehrer() {
+	public boolean addLehrer(Lehrer l) {
 		
 	}
 	public boolean setAbteilungsvorstand() {
 		
 	}
-
-
+	
 }
