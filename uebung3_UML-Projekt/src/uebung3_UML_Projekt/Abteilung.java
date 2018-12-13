@@ -22,7 +22,7 @@ public class Abteilung {
 	public boolean addLehrer(Lehrer l) {
 		
 	}
-	public boolean setAbteilungsvorstand() {
+	public boolean setAbteilungsvorstand(Lehrer l) {
 		
 	}
 	
