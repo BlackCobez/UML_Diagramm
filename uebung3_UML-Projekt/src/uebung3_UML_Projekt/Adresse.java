@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Adresse {
 	//Beziehungen
-	
+
 	//Variablen
 	private String ort; 
 	private String strasse;
