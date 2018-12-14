@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Klassen {
 	
 	//Beziehung
-	private Schueler klassensprecher;
-	private ArrayList<Schueler> schueler = new ArrayList<Schueler>();
+	private Schueler klassensprecher;									// Klassensprecher 0...1
+	private ArrayList<Schueler> schueler = new ArrayList<Schueler>();	//Liste von Schuelern
 	
 	//Variablen
 	private String bezeichnung;
@@ -30,12 +30,8 @@ public class Klassen {
 		
 		return durchschnittsalter;
 	}
-	public boolean setKlassensprecher(Schueler schueler) {
-		schueler = klassensprecher;
-		return true;
-	}
-	public boolean addSchueler(Schueler schueler) {
-		if(s_anz<36) {
+	public boolean addSchueler(Schueler schueler) {		//schüler hinzufügen
+		if(s_anz<36) {									//obergrenze von 36 schuelern
 			this.schueler.add(schueler);
 			s_anz++;
 		}else System.out.println("Klasse darf max 36 Schüler haben");
@@ -45,15 +41,20 @@ public class Klassen {
 	public void exportStundenplan() {
 		
 	}
-	public Schueler getKlassensprecher() {
-		return klassensprecher;
-	}
-	public ArrayList<Schueler> getklasse() {
+	public ArrayList<Schueler> getklasse() {	// um die gesammte liste von schülern zu kriegen
 		return schueler;
 	}
 
-	public int getS_anz() {
+	public int getS_anz() {			//Schüler anzahl in einer klasse
 		return s_anz;
+	}
+
+	public Schueler getKlassensprecher() {		//klassensprecher herausfinden
+		return klassensprecher;
+	}
+
+	public void setKlassensprecher(Schueler klassensprecher) {	//klassensprecher auswählen
+		this.klassensprecher = klassensprecher;
 	}
 
 }

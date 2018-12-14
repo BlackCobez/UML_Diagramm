@@ -35,7 +35,7 @@ public class HTL_main {
 		{
 			System.out.println(s.getVorname());
 		}
-		
+		System.out.println("Klassensprecher"+a.getKlassensprecher().getVorname());
 		System.out.println(a.getS_anz());
 		
 	}
