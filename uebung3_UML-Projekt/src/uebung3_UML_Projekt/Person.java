@@ -1,29 +1,26 @@
 package uebung3_UML_Projekt;
-import java.sql.Date;
+import java.util.ArrayList;
+
 
 public class Person {
 	//Beziehung
-	
+	private ArrayList<Adresse> adressenliste = new ArrayList<Adresse>();
 	//Variablen
 	private long svnr;
 	private String vorname;
 	private String nachname;
-	private Date geburtsdatum;
+	private String geburtsdatum;
 	private String email;
 	
 	//Konstruktor
-	public Person(String vorname, String nachname, Date geburtsdatum, String email, long svnr)
+	public Person(String vorname, String nachname, String geburtsdatum, String email, long svnr, String ort, String strasse, Integer hausnummer, Integer plz)
 	{
+		this.adressenliste.add(new Adresse(ort,strasse,hausnummer,plz));
 		this.vorname = vorname;
 		this.nachname = nachname;
 		this.geburtsdatum = geburtsdatum;
 		this.email = email;
 		this.svnr = svnr;
-	}
-	//testkonstruktor
-	public Person(String vorname)
-	{
-		this.vorname = vorname;
 	}
 	
 	//Methoden, getter und setter
@@ -39,8 +36,14 @@ public class Person {
 	public String getEmail() {
 		return email;
 	}
-	public Date getGeburtsdatum() {
+	public String getGeburtsdatum() {
 		return geburtsdatum;
+	}
+	public ArrayList<Adresse> getAdressenliste() {
+		return adressenliste;
+	}
+	public void setAdressenliste(ArrayList<Adresse> adressenliste) {
+		this.adressenliste = adressenliste;
 	}
 
 }

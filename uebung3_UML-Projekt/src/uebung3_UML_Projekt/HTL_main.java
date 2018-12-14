@@ -3,35 +3,25 @@
 // 	Hier werden versuche an semtlichen Lebewesen innerhalb der öffentlichen Einrichtung durchgeführt.
 //
 package uebung3_UML_Projekt;
-
 import java.util.ArrayList;
 
 public class HTL_main {
 
 	public static void main(String[] args) {
-		//Testdurchlauf für die Beziehung von einer Adresse zu mehreren Personen
-		/*
-		 * Jede Person hat sehr wahrscheinlich eine andere Adresse für den spezialfall Schule
-		 * Doch für die Praxis gillt, mehrere Personen können ein und dieselbe Adresse haben
-		 * Hier ist es so gelöst, das eine adresse immer mind. eine Person braucht (würde sonst keinen sinn machen)
-		 */
-		ArrayList<Person> pers = new ArrayList<Person>();
-		Person tillich = new Person("tillich");
-		Person k = new Person("großer K");
-		Person crha = new Person("CRHA");
+	
+		Person alex = new Person("Alex","Steger", "03-10-1999","alex.steger@htlstp.at", 2222, "stp","hauptstraße", 11, 3011);
+		alex.getAdressenliste().add(new Adresse( "stp2","hauptstraße", 12, 3012));
 		
-		pers.add(tillich);
-		pers.add(crha);
-		pers.add(k);
+		Person monika = new Person("Monika","Wandl", "03-10-1999","alex.steger@htlstp.at", 2222, "stp","hauptstraße", 11, 3011);
+		monika.getAdressenliste().add(new Adresse( "stp2","hauptstraße", 12, 3012));
 		
-
-		Adresse stp = new Adresse("St.Pölten", pers);
-
-		
-		for(Person p : stp.getpersonenliste())
+		for(Adresse a : monika.getAdressenliste())
 		{
-			System.out.println(p.getVorname() +" hat die Adresse: "+ stp.getOrt());
+			a.printAdresse();
+		}
+		for(Adresse a : alex.getAdressenliste())
+		{
+			a.printAdresse();
 		}
 	}
-
 }
