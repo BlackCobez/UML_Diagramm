@@ -9,8 +9,6 @@ public class Abteilung {
 	private String kuerzel;
 	private String name;
 	
-	private Schule schule;
-	
 	private ArrayList<Schueler> schuelerliste = new ArrayList<Schueler>();
 	
 	//Konstruktor
@@ -36,6 +34,7 @@ public class Abteilung {
 	public boolean addLehrer(Lehrer l) {
 		
 	}
+	
 	public boolean setAbteilungsvorstand(Lehrer l) {
 		
 	}

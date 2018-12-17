@@ -10,9 +10,11 @@ public class Schule {
 	private long schulkennzahl;
 	
 	private Adresse adresse;
+	//private Abteilung abteilung;
+	private Nichtlehrpersonal nichtlehrpersonal;
+	private Abteilung el, et, ma, inf, wir;			//in Abteilung erstellen?
+
 	
-	
-	private ArrayList<Mitarbeiter> mitarbeiterliste = new ArrayList<Mitarbeiter>();
 	private ArrayList<Schueler> schuelerliste = new ArrayList<Schueler>();
 	
 	//Konstruktor
@@ -26,12 +28,20 @@ public class Schule {
 	public Adresse getAdresse() {
 		return adresse;
 	}
-	public Adresse setAdresse(Adresse adresse) {
-		this.adresse = adresse;
+
+	//Abteilung
+	public Abteilung() {
+		el = new Abteilung();
+		et = new Abteilung();
+		ma = new Abteilung();
+		wir = new Abteilung();
+		inf = new Abteilung();
 	}
 	
-
-	
+	public Nichlehrpersonal() {
+		
+	}
+		
 	//Methoden, getter und setter
 	public boolean addPersonal(Nichtlehrpersonal personal) {		
 	}
@@ -57,7 +67,7 @@ public class Schule {
 	
 	
 	//ArrayListen Mitarbeiter/Personal ? und Schueler
-	public  ArrayList<Mitarbeiter> getMitarbeiterliste(){		//ArrayList<Mitarbeiter>????PERSONAL ODER MITARBEITER????
+	public  ArrayList<Mitarbeiter> getPersonal(){		//ArrayList<Mitarbeiter>????PERSONAL ODER MITARBEITER????
 		return mitarbeiterliste;
 	} 
 	public  ArrayList<Schueler> getSchuelerliste() {			//ArrayList<Schueler>

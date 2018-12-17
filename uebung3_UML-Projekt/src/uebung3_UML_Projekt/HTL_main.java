@@ -32,6 +32,16 @@ public class HTL_main {
 		{
 			System.out.println(p.getVorname() +" hat die Adresse: "+ stp.getOrt());
 		}
+		
+		//Adresse
+		Adresse adresse = new Adresse("Waldstraﬂe");
+		//Abteilung
+		Abteilung el = new Abteilung("Elektronik");
+		Abteilung et = new Abteilung("Elektrotechnik");
+		Abteilung wir = new Abteilung("Wirtschaft");
+		Abteilung ma = new Abteilung("Maschienenbau");
+		Abteilung in = new Abteilung("Informatik");
+		
 	}
 
 }
