@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Schueler extends Person{
 	//Beziehung
+	private Schule schule;
 	
 	//Variablen
 	private int katalognummer;
@@ -13,6 +14,10 @@ public class Schueler extends Person{
 	//Konstruktor
 	
 	//Methoden, getter und setter
+	public Schule getschule() {
+		return schule;
+	}
+	
 	public int getKatalognummer() {
 		return katalognummer;
 	}
