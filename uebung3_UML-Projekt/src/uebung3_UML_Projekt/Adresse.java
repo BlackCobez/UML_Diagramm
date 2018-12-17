@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Adresse {
 	//Beziehungen
 	private ArrayList<Person> personenliste = new ArrayList<Person>();
+	private Schule schule;
 	//Variablen
 	private String ort; 
 	private String strasse;
@@ -32,6 +33,10 @@ public class Adresse {
 
 	public void setpersonenliste(ArrayList<Person> personenliste) {
 		this.personenliste = personenliste;
+	}
+	
+	public Schule getschule() {					
+		return schule;
 	}
 	
 	public String getOrt() {
