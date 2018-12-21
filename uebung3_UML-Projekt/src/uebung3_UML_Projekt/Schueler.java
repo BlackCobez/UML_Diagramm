@@ -4,19 +4,20 @@ import java.util.Date;
 
 public class Schueler extends Person{
 	//Beziehung
-	private Schule schule;
+	//private Schule schule;
 	
 	//Variablen
 	private int katalognummer;
 	private boolean eigenberechtigt;
 	private Date eintrittsdatum;
 	
-	//Konstruktor
+	
+	}
 	
 	//Methoden, getter und setter
-	public Schule getschule() {
+	/*public Schule getschule() {
 		return schule;
-	}
+	}*/
 	
 	public int getKatalognummer() {
 		return katalognummer;

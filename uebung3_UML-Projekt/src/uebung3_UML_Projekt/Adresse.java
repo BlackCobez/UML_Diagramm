@@ -6,7 +6,7 @@ public class Adresse {
 	//Beziehungen
 
 	private ArrayList<Person> personenliste = new ArrayList<Person>();
-	private Schule schule;
+	
 
 	//Variablen
 	private String ort; 
@@ -29,9 +29,8 @@ public class Adresse {
 		this.personenliste = personenliste;
 	}
 	
-	public Schule getschule() {					
-		return schule;
-	}
+	
+
 
 	public String getOrt() {
 		return ort;
