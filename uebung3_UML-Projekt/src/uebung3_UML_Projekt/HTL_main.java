@@ -35,15 +35,6 @@ public class HTL_main {
 		{
 			System.out.println(s.getVorname());
 		}
-
-
-		
-		//Adresse
-		Adresse adresse = new Adresse("Waldstraﬂe");
-		
-		//Schulsprecher
-		Schueler schulsprecher = new Schueler();
-		
 		
 		
 
