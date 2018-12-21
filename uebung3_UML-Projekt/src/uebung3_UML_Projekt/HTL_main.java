@@ -11,21 +11,21 @@ public class HTL_main {
 		Schueler alex = new Schueler("Alex","Steger", "03-10-1999","alex.steger@htlstp.at", 2222, "stp","hauptstraﬂe", 11, 3011, 1, true, "01-09-2014");
 		Schueler monika = new Schueler("Monika","Wandl", "05-09-1999","alex.steger@htlstp.at", 2222, "tullnerbach","hauptstraﬂe", 11, 3011, 2, true, "01-09-2014");
 		
-		Lehrer weigl = new Lehrer("...","Weigl", "03-10-1999","alex.steger@htlstp.at", 2222, "stp","hauptstraﬂe", 11, 3011,"weig");
+		Lehrer weigl = new Lehrer("Manuel","Weigl", "03-10-1999","alex.steger@htlstp.at", 2222, "stp","hauptstraﬂe", 11, 3011,"weig");
 		Lehrer tillich = new Lehrer("Markus","Tillich", "03-10-1999","alex.steger@htlstp.at", 2222, "stp","hauptstraﬂe", 11, 3011,"weig");
 		Nichtlehrpersonal hausmeister= new Nichtlehrpersonal("franz","tischler", "03-10-1999","alex.steger@htlstp.at", 2222, "stp","hauptstraﬂe", 11, 3011);
 		
 		monika.addadresse("Pressbaum", "Hauptstraﬂe", 6, 3021);
 		
-//		System.out.println(weigl.getAnzahl());
-//		
-//		System.out.println(monika.getVorname() + " hat die Adresse/n:");
-//		for (Adresse a : monika.getAdressenliste()) {
-//			a.printAdresse();
-//		}
+		System.out.println(weigl.getAnzahl());
+		
+		System.out.println(monika.getVorname() + " hat die Adresse/n:");
+		for (Adresse a : monika.getAdressenliste()) {
+			a.printAdresse();
+		}
 		
 		Klassen a = new Klassen("5AHELS", 5);
-		Klassen n = new Klassen("5AHELS", 5);
+		Klassen n = new Klassen("5BHELS", 5);
 		
 		a.addSchueler(alex);
 		a.addSchueler(monika);
@@ -35,6 +35,7 @@ public class HTL_main {
 		{
 			System.out.println(s.getVorname());
 		}
+
 
 		
 		//Adresse
@@ -47,7 +48,7 @@ public class HTL_main {
 		
 
 		System.out.println("Klassensprecher"+a.getKlassensprecher().getVorname());
-		System.out.println(a.getS_anz());
+
 
 		
 	}
