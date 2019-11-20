@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public abstract class Person {
 	//Beziehung
 	private ArrayList<Adresse> adressenliste = new ArrayList<Adresse>();
+	
 	//Variablen
 	private long svnr;
 	private String vorname;
@@ -13,7 +14,8 @@ public abstract class Person {
 	private String email;
 	
 	//Konstruktor
-	public Person(String vorname, String nachname, String geburtsdatum, String email, long svnr, String ort, String strasse, Integer hausnummer, Integer plz)
+	public Person(String vorname, String nachname, String geburtsdatum, String email, long svnr, 
+			String ort, String strasse, Integer hausnummer, Integer plz)
 	{
 		this.adressenliste.add(new Adresse(ort,strasse,hausnummer,plz));	// Man kann bei dieser variante zwar bei der Instanzierung einer 
 																			// Person nur eine Adresse angeben, aber man kann im nachhinein eine weitere adden 
@@ -47,8 +49,8 @@ public abstract class Person {
 	public void setAdressenliste(ArrayList<Adresse> adressenliste) {
 		this.adressenliste = adressenliste;
 	}
-	public void addadresse(String ort, String strasse, Integer hausnummer, Integer plz)
+	public void addadresse(String ort, String strasse, Integer hausnummer, Integer plz)	
 	{
-		this.adressenliste.add(new Adresse(ort,strasse,hausnummer,plz));
+		this.adressenliste.add(new Adresse(ort,strasse,hausnummer,plz));		//es wird eine neue Adresse erstellt und in die Liste hinzugefügt
 	}
 }

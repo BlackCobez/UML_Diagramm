@@ -2,11 +2,9 @@ package uebung3_UML_Projekt;
 
 public class Nichtlehrpersonal extends Mitarbeiter{
 	//Beziehung
-	
-	
 
 	//Variablen
-	public static String nichtlehrperson = "Beschäftigt";
+	public static String nichtlehrperson = "Wichtige Aufgaben zu erledigen (Kaffee trinken)";
 	
 	//Konstruktor
 	public Nichtlehrpersonal(String vorname, String nachname, String geburtsdatum, String email, long svnr, 

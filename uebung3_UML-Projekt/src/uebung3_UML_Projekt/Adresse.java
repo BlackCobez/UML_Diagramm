@@ -5,9 +5,6 @@ import java.util.ArrayList;
 public class Adresse {
 	//Beziehungen
 
-	private ArrayList<Person> personenliste = new ArrayList<Person>();
-	
-
 	//Variablen
 	private String ort; 
 	private String strasse;
@@ -24,14 +21,6 @@ public class Adresse {
 	
 	
 	//Methoden, getter und setter
-
-	public void setpersonenliste(ArrayList<Person> personenliste) {
-		this.personenliste = personenliste;
-	}
-	
-	
-
-
 	public String getOrt() {
 		return ort;
 	}

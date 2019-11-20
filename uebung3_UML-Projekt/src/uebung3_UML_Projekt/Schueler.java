@@ -10,6 +10,7 @@ public class Schueler extends Person{
 	private int katalognummer;
 	private boolean eigenberechtigt;
 	private String eintrittsdatum;
+	private static int sanz = 0;
 	
 	//Konstruktor
 	public Schueler(String vorname, String nachname, String geburtsdatum, String email, long svnr, 	// Person
@@ -20,6 +21,7 @@ public class Schueler extends Person{
 		this.katalognummer = katalognummer;
 		this.eigenberechtigt = eigenberechtigt;
 		this.eintrittsdatum = eintrittsdatum;
+		sanz++;
 	}
 	
 	//Methoden, getter und setter
@@ -34,4 +36,20 @@ public class Schueler extends Person{
 		return eintrittsdatum;
 	}
 
+	public Klassen getKlasse() {
+		return klasse;
+	}
+	public void addKlasse(Klassen klasse){	
+		this.klasse = klasse;
+	}
+
+	public static int getSanz() {
+		return sanz;
+	}
+
+	public static void setSanz(int sanz) {
+		Schueler.sanz = sanz;
+	}
+	
+	
 }
